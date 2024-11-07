@@ -223,17 +223,17 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
 10.  Expand **Add enrichments**, keep default skillset name, check **enable OCR** and select all **checked items requiring a filed name** except
     **Extract personally identifiable information** then click on **Next: Customize target index.**
 
-    ![](./media/image122.png)
+        ![](./media/image122.png)
 
 11.  Enter Index name as - `customer-index`, and click on **Add field** on top of the field table.
 
-    ![](./media/image123.png)
+        ![](./media/image123.png)
 
-11.  In the new field row that gets added at the bottm of the table, enter **Field name** as : `customer_id`, select type="Edm.String" and select all skills
+12.  In the new field row that gets added at the bottm of the table, enter **Field name** as : `customer_id`, select type="Edm.String" and select all skills
 
-    ![](./media/image124.png)
+        ![](./media/image124.png)
 
-11.  Repeat the above 2 steps to also add the below fields and then click **Next: Create an indexer**
+13.  Repeat the above 2 steps to also add the below fields and then click **Next: Create an indexer**
 
     - Field name -  `customer_name` , Type - Edm.String , Skills -All
 
@@ -241,24 +241,23 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
 
     - Field name -  `campaign_result` , Type - Edm.String , Skills -All
 
-    - Field name -  `age` , Type - Edm.Int32 , Skills -All
+    - Field name -  `age` , Type - Edm.Int32 , Skills -Al
 
+![](./media/image125.png)
 
-    ![](./media/image125.png)
+14.  Enter the indexer name : `customer-azureblob-indexer` and click **Submit** for the skills to be created.
 
-11.  Enter the indexer name : `customer-azureblob-indexer` and click **Submit** for the skills to be created.
+        ![](./media/image126.png)
 
-    ![](./media/image126.png)
+        ![](./media/image127.png)
 
-    ![](./media/image127.png)
+15.  Click on **Indexers** under **Search management**, you should see new indexer with succeeded documents count.
 
-6.  Click on **Indexers** under **Search management**, you should see new indexer with succeeded documents count.
+        ![](./media/image128.png)
 
-    ![](./media/image128.png)
+16.  Click on **Indexes**. Note the new **customer-index** created. Wait for the Vector index size to update.
 
-7.  Click on **Indexes**. Note the new **customer-index** created. Wait for the Vector index size to update.
-
-    ![](./media/image129.png)
+        ![](./media/image129.png)
 
 
 ### **Task 6: Build and Deploy Chat app in Azure AI Studio.**

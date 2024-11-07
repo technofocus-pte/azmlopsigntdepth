@@ -12,25 +12,25 @@ In this lab, you will work as an AI app developer in Contoso Bank's AI engineeri
 
 **Tools and Technologies used in this workshop :**
 
-1.  **Azure Machine Learning (AML)**: For building, training, and
+**Azure Machine Learning (AML)**: For building, training, and
     deploying the predictive model in the banking scenario.
 
-2.  **MLOps**: For covering model training, deployment, and automated model
+**MLOps**: For covering model training, deployment, and automated model
     management.
 
-3.  **Azure AI Studio**: Used to create, configure, and deploy the
+**Azure AI Studio**: Used to create, configure, and deploy the
     chatbot powered by Azure AI and integrated with the AML model.
 
-4.  **Azure AI Search**: For enriching the chatbot with search and query
+**Azure AI Search**: For enriching the chatbot with search and query
     capabilities based on customer data and loan details.
 
-5.  **Azure App Service**: To host and manage the deployed web
+**Azure App Service**: To host and manage the deployed web
     application (chat app).
 
-6.  **Azure Blob Storage**: For storing and managing datasets used in
+**Azure Blob Storage**: For storing and managing datasets used in
     training and prediction.
 
-7.  **Python SDK**: For interacting with Azure services, building the
+**Python SDK**: For interacting with Azure services, building the
     model and working with data pipelines.
 
 ### Lab 01: Setting up Azure Machine Learning Workspace
@@ -63,21 +63,21 @@ In this exercise, we will set up the foundational components of the Azure Machin
     ![](./media/image3.png)
 
 
-6. We will also install Python dependencies (e.g. azureml-sdk). Run +++pip install azureml-sdk+++ to install the dependencies.
+5. We will also install Python dependencies (e.g. azureml-sdk). Run +++pip install azureml-sdk+++ to install the dependencies.
 
     ![](./media/image4.png)
 
-7. Lets now run this script to create thre required resources in an Azure resource group within the assigned subscription. 
+6. Lets now run this script to create thre required resources in an Azure resource group within the assigned subscription. 
 
     +++cd MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration/scripts/+++
 
     +++chmod +x setup.sh+++
-8. Run below setup script now by executing this command. This script will register the Machine Learning resource providers, create an Azure Machine Learning workspace, a compute instance and a compute cluster in AML workspace.
+7. Run below setup script now by executing this command. This script will register the Machine Learning resource providers, create an Azure Machine Learning workspace, a compute instance and a compute cluster in AML workspace.
     +++./setup.sh+++
 
     ![](./media/image5.png)
 
-7. Wait for the script to complete. It takes 4-5 minutes for the script to run.
+8. Wait for the script to complete. It takes 4-5 minutes for the script to run.
 
 
     ![](./media/image6.png)
@@ -96,53 +96,15 @@ In this exercise, we will set up the foundational components of the Azure Machin
 11. Explore the details pane to ensure all the resources including an AML workspace, a storage account, a Key vault and a Log Analaytics workspace are created successfully.
 
 13. Click on **Azure Machine Learning workspace** name. Click on **Launch Studio** button. The AML Studio is launched in a new browser tab.
-14. Navigate to the Azure AI Machine Learning Studio tab that already has your workspace opened.
-15. Click on **Compute** (in the **Manage** section) from the left navigation menu, to verify that a Compute instance is already **Running**.
-16. Now click on **Compute clusters** from the top menu (next to **Compute instances**), to verify that a compute cluster was successfully deployed.
-
-### To be removed ##
-    ![](./media/image11.png)
-
-17. Click on **Access control (IAM)** from left navigation menu, click
-    on **Add -> Add role assignment.**
-
-    ![](./media/image12.png)
-
-18. Select **Privileged administrator roles -> Contributor** role and
-    then click **Next.**
-
-    ![](./media/image13.png)
-
-19. Select **user,group or service principal** radio button, click on
-    **Select members** link. Search for your Azure subscription tenant
-    ,select it and then click on **Select**.
-
-    ![](./media/image14.png)
-
-20. Click on **Review +assign**.
-
-    ![](./media/image15.png)
-
-21. Again,click on **Review + assign**.
-
-    ![](./media/image16.png)
-
-22. Click on **Overview** from left navigation and then click on
-    **Launch studio** button.
 
     ![](./media/image17.png)
 
-23. AML studio opens in new tab. Sign in with your Azure subscription
-    account.
-
-    ![](./media/image18.png)
-
-24. Click on Compute in the Manage section, from the left navigation menu. Note that the AML compute you created is listed and the State is **Running**.
+14. Navigate to the Azure AI Machine Learning Studio tab that already has your workspace opened.
+15. Click on **Compute** (in the **Manage** section) from the left navigation menu, to verify that a Compute instance is already **Running**.
 
     ![](./media/image19.png)
 
-25. Click on **Compute clusters** , cluster should have created
-    successfully.
+16. Now click on **Compute clusters** from the top menu (next to **Compute instances**), to verify that a compute cluster was successfully deployed.
 
     ![](./media/image20.png)
 
@@ -207,7 +169,6 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
     ![](./media/image32.png)
 
-    ![](./media/image33.png)
 
 21. In the IAM details pane, Click on **Role assignments** (next to **Check Access**).
 
@@ -228,6 +189,7 @@ When you create an Azure Machine Learning workspace, an Azure Storage Account is
 2.  Select **Configuration** under **Settings**. Then set **Allow Blob anonymous access** to **Enabled** and then click **Save**.
 
     ![](./media/image37.png)
+
 
 3.  Click on **Containers** under **Data storage** and click **azureml-blobstore-XXXXXXXXXXXXX** container.
 
