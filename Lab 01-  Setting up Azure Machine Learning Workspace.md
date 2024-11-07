@@ -109,7 +109,7 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
 14. Navigate to the Azure AI Machine Learning Studio tab that already has your workspace opened.
 
-    ![](./media/image174.png)
+    ![](./media/image175.png)
 
 15. Click on **Compute** (in the **Manage** section) from the left navigation menu, to verify that a Compute instance is already **Running**.
 
