@@ -16,11 +16,13 @@ In this task,we will use python SDK to clean the data and train the model using 
 
 1.  While still in Azure ML Studio, Terminal for your deployed compute instance, expand **models** folder (created as a result of the previous exercise), and select the **ContosoBankAMLmodel.ipynb** notebook.
 
-2.  Run the first cell to check the latest version of azure-ai-ml package.
+    ![](./media/image59.png)
+
+2.  Run the cell in **Before we start** section to check the latest version of azure-ai-ml package.
 
     > Note: If the azure-ai-ml package is not installed, run **pip install azure-ai-ml** to install it
 
-    ![](./media/image59.png)
+    ![](./media/image176.png)
 
     > Note : Select **Authenticate** and follow the necessary steps if a notification appears asking you to authenticate.
 
@@ -50,27 +52,78 @@ In this task,we will use python SDK to clean the data and train the model using 
 
     ![](./media/image66.png)
 
-9. Run cell to preview merge_data.csv file. Then run all the remaining cells in this section.
+9. Run cell to preview **merge_data.csv** file. Then run all the remaining cells in this section.
 
     ![](./media/image67.png)
+
+    ![](./media/image177.png)
 
 10.  Run cell to Describe the data after transposing
 
         ![](./media/image68.png)
 
-11. Run all the cells and check merged_data to check number of rows.
+11. Run the cell to replace missing value with 0.
+
+    ![](./media/image178.png)
+
+12. Run the cell to check non-numeric values in the dataframe.
+
+    ![](./media/image179.png)
+
+13. Run the cell to drop column not required for training the model.
+
+    ![](./media/image180.png)
+
+14. Run all the cells and check merged_data to check number of rows.
 
     ![](./media/image69.png)
 
-12. Run cell to show unique values in the LoadOnCard Column.
+15. Run cell to show unique values in the LoadOnCard Column.
 
     ![](./media/image70.png)
 
-13. Run cell to show distribution of data in LoanonCard column
+16. Run cell to show distribution of data in InternetBanking column
+
+    ![](./media/image182.png)
+    
+
+17. Run cell to show distribution of data in CreditCard column
+
+    ![](./media/image183.png)
+
+18. Run cell to show distribution of data in LoanonCard column
 
     ![](./media/image71.png)
 
-14. Read and run each cell under **Model Preparation** and explore.
+19. Run cell to show distribution of data in FixedDepositAccount column
+
+    ![](./media/image184.png)
+
+20. Run cell to show distribution of data in data in security column
+
+    ![](./media/image185.png)
+
+21. Run the cell to display all columns with columns missing values replaced with 0
+
+    ![](./media/image186.png)
+
+22. Run cell to check non numeric values in the dataframe.
+
+    ![](./media/image187.png)
+
+23. Run cell to explore, analyse and visualise data using univariate analysis 
+
+    ![](./media/image188.png)
+
+24. Run cell to process data for modeling.
+
+    ![](./media/image189.png)
+
+25. Run cell to upsampling data
+
+    ![](./media/image190.png)
+
+26. Read and run each cell under **Model Preparation** and explore.
 
     ![](./media/image72.png)
 
@@ -78,23 +131,27 @@ In this task,we will use python SDK to clean the data and train the model using 
 
     ![](./media/image74.png)
 
-15. Read and run cell in **Apply Logistic Regression** section
+27. Read and run cell in **Apply Logistic Regression** section
 
     ![](./media/image75.png)
 
-16. When we run a Python script as an experiment in Azure Machine Learning, a Conda environment is created to define the execution context for the script. Azure Machine Learning provides a default environment that includes many common packages; including the azureml-defaults package that contains the libraries necessary for working with an experiment run, as well as popular packages like pandas and numpy. Run cell in **Define an environment** section to define and register financial-experiment-env environment
+28. When we run a Python script as an experiment in Azure Machine Learning, a Conda environment is created to define the execution context for the script. Azure Machine Learning provides a default environment that includes many common packages; including the azureml-defaults package that contains the libraries necessary for working with an experiment run, as well as popular packages like pandas and numpy. Run cell in **Define an environment** section to define and register financial-experiment-env environment
 
     ![](./media/image76.png)
 
-17. Next, run cell to **view registered environments**.
+29. Next, run cell to **view registered environments**.
 
     ![](./media/image77.png)
 
-18. Run all cells to **run an experiment on remote compute**.
+30. Run cell to create training script-finance_training.py
+
+    ![](./media/image191.png)
+
+31. Run all cells to **run an experiment on remote compute**.
 
     ![](./media/image78.png)
 
-19. Run the experiment cell . wait for the experiment to complete . It
+32. Run the experiment cell . wait for the experiment to complete . It
     takes **15-20 minutes.**. 
 
     ![](./media/image79.png)
@@ -103,15 +160,19 @@ In this task,we will use python SDK to clean the data and train the model using 
 
     ![](./media/image81.png)
 
-20. Run each cell under **Deploy the model as a web service** section.
+33. Run the cell to register the model that was trained by an experiment 
+
+    ![](./media/image192.png)
+
+34. Run each cell under **Deploy the model as a web service** section.
 
     ![](./media/image82.png)
 
-21. Run the cell to provide web service endpoint under **Use the web service** section.
+35. Run the cell to provide web service endpoint under **Use the web service** section.
 
     ![](./media/image83.png)
 
-21. Run all cells to predict Asset and liability Customers.
+36. Run all cells to predict Asset and liability Customers.
 
     ![](./media/image84.png)
 
