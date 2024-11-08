@@ -265,8 +265,7 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
     - Field name -  `age` , Type - Edm.Int32 , Skills -Al
 
     
-![](./media/image125.png)
-
+   ![](./media/image125.png)
 
 14.  Enter the indexer name : `customer-azureblob-indexer` and click **Submit** for the skills to be created.
 
