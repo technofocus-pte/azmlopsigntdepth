@@ -328,25 +328,33 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
 8.  Click on **Chat** from the left navigation menu under **Project Playground**. In Setup section in the details pane, expand **Add your data** and then click on **Add a new data source**.
 
-    ![](./media/image137.png)
+    ![](./media/image211.png)
 
 9.  Select **Azure AI Search** as **Data source** and then click **Next**.
 
-    ![](./media/image138.png)
+    ![](./media/image212.png)
 
-10.  Select your **Azure AI Search** service from the drop-down menu, and then select **customer-index** that you created previusly, and then click **Next**.
+10. Click on **Select Azure AI Search service** drop down and select **Connect other Azure AI Search resource**
 
-    ![](./media/image139.png)
+    ![](./media/image213.png)
+
+11. Click on **Add connection**
+
+    ![](./media/image214.png)
+
+12.  Select your **Azure AI Search** service from the drop-down menu, and then select **customer-index** that you created previusly, and then click **Next**.
+
+     ![](./media/image215.png)
 
 11.  In the **Vector Index**, keep the default value (customer-index), click **Next**.
 
-    ![](./media/image140.png)
+     ![](./media/image216.png)
 
 12. Click on **Create Vector Index**.
 
-    ![](./media/image141.png)
+    ![](./media/image217.png)
 
-    ![](./media/image142.png)
+    ![](./media/image218.png)
 
 13. Enter the below prompt in the **Type user query here** text box and press the send button.
 
@@ -356,7 +364,7 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
 14. Once response is received, enter the below prompt next and press send
 
-    `List high-value customers`
+    `List high value customers`
 
     ![](./media/image144.png)
 
