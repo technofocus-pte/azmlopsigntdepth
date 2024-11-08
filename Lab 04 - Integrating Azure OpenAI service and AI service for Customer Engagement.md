@@ -244,15 +244,15 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
 10.  Expand **Add enrichments**, keep default skillset name, check **enable OCR** and select all **checked items requiring a filed name** except
     **Extract personally identifiable information** then click on **Next: Customize target index.**
 
-![](./media/image122.png)
+        ![](./media/image122.png)
 
 11.  Enter Index name as - `customer-index`, and click on **Add field** on top of the field table.
 
-![](./media/image123.png)
+        ![](./media/image123.png)
 
 12.  In the new field row that gets added at the bottm of the table, enter **Field name** as : `customer_id`, select type="Edm.String" and select all skills
 
-![](./media/image124.png)
+        ![](./media/image124.png)
 
 13.  Repeat the above 2 steps to also add the below fields and then click **Next: Create an indexer**
 
