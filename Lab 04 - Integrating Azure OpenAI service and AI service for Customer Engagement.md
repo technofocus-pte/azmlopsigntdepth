@@ -7,9 +7,6 @@
 - Using insights from the enhanced segmentation
 - Use Azure AI Search Services to enrich the chatbot with search
 
-
-# Integrating Azure OpenAI service and AI service for Customer Engagement
-
 >**Introduction:** In this task, we will integrate the Azure OpenAI chatbot into Contoso Bank’s customer engagement platforms. The chatbot will serve as an interactive tool for customers, helping them explore loan products, get personalized loan recommendations, and receive real-time assistance. We will use Azure OpenAI’s natural language processing capabilities to ensure the chatbot delivers a smooth, human-like experience while collecting valuable customer data for further analysis.
 
 ### **Task 1 : Set Up Azure AI Search service**
@@ -169,7 +166,8 @@ In this task, we will create Azure OpenAI resource to deploy OpenAI models for e
 
     ![](./media/image114.png)
 
-### **Task 4 : Add a data source to Azure AI search service**
+
+### **Task 5 : Add a data source to Azure AI search service**
 
 In this task, we will add our Azure storage container as the data source for all our resources that will be used to enrich data.
 
@@ -203,6 +201,8 @@ In this task, we will add our Azure storage container as the data source for all
 In this task, we will create a skillset  object in Azure AI Search that's attached to an indexer.It contains one or more skills that call built-in AI or external custom processing over documents retrieved from an external data source. Creating and mappink the skills will enhance the in saerch we perform on the index.
 
 1. On the **Identity** page of your Azure AI search service, turn on **System assigned** Managed Identity. Click **Save** on the top menu to generate the Object ID of the managed identity.
+
+
 2. Copy the **Object ID** of the managed identity created, and click on 88Azure Role Assignments** button to assign the required permissions to this ID.
 3. Click on **Add role assignments (Preview)** on the top menu.
 4. In the **Scope** drop down, select **Storage**.
