@@ -379,22 +379,22 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
     - Select **Create a new web app** radio button
 >Note : Deployment takes 5-10 minutes
 
-- Name: should be a unique name (eg `mlappchatappXXXX` - XXXX can be a unique number)
+ - Name: should be a unique name (eg `mlappchatappXXXX` - XXXX can be a unique number)
 
-- Subscription: Your Azure subscription
+ - Subscription: Your Azure subscription
 
-- Resource group - your resource existing resource group
+ - Resource group - your resource existing resource group
 
-- Location - West US / East US/East US 2 ( usually East US has high demand and deployment may fail). You can use the same location as the hub
+ - Location - West US / East US/East US 2 ( usually East US has high demand and deployment may fail). You can use the same location as the hub
 
-- Pricing plan: Standard (S1) /S2
+ - Pricing plan: Standard (S1) /S2
 
 
-   ![](./media/image147.png)
+    ![](./media/image147.png)
 
-   ![](./media/image148.png)
+    ![](./media/image148.png)
 
-   ![](./media/image149.png)
+    ![](./media/image149.png)
 
 17. Switch back to Azure portal page, click on **Resource group -> Resource group** name. Click on **Deployments** under **SEttings** from left navigation menu.
 

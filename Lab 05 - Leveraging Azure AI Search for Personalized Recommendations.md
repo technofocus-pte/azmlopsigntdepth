@@ -37,7 +37,7 @@ In this task, we explore the chat-app
 
     ![](./media/image154.png)
 
-6.  Go back to AML Studio tab -> Assets -> Endpoints -> finance-service. Copy the REST endpoint value.
+6.  Go back to **AML Studio tab -> Assets -> Endpoints -> finance-service**. Copy the REST endpoint value.
 
     ![](./media/image155.png)
 
@@ -61,37 +61,42 @@ In this task, we explore the chat-app
 
      ![](./media/image159.png)
 
-    ![](./media/image160.png)
+    
 
 12. Click on **Add identity provider**.
 
-    ![](./media/image161.png)
+    ![](./media/image160.png)
 
 13. Select Microsoft as the Identity provider, update Name as `MSIdproverXXXX` (replce XXXX with a unique set of number). Select **Client secret expiration** duration as 90 days and then click **Next: Permissions**.
 
+    ![](./media/image161.png)
+
+    
+
+14. Click on **Add permission**. Scroll down in the list to expand **Application** and select **Application.ReadWrite.All**. Then click on **Update permission.**
+
     ![](./media/image162.png)
 
-14. Click on Add permission. Scroll down in the list to expand **Application** and select **Application.ReadWrite.All**. Then click on **Update permission.**
+    
+15. Click on **Add** now.
 
     ![](./media/image163.png)
-
-15. Click on **Add** now.
 
     ![](./media/image164.png)
 
 16.  Click on **Overview** page of the app. Wait for the page to load and then click on **Restart**. Confirm restart by clicking on **Yes**.
 
-    ![](./media/image165.png)
+   ![](./media/image165.png)
 
-10. Click on **Overview** and then click on **Browse** in the top menu.
+17. Click on **Overview** and then click on **Browse** in the top menu.
 
     ![](./media/image166.png)
 
-11. The app opens in a new tab. Review and **Accept** to allow permissions.
+18. The app opens in a new tab. Review and **Accept** to allow permissions.
 
     ![](./media/image167.png)
 
-12. The app opens, enter the below prompts, and explore it.
+19. The app opens, enter the below prompts, and explore it.
 
     `List high-value customers`
 
