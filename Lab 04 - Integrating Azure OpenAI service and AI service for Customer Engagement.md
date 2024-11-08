@@ -290,16 +290,11 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     ![](./media/image131.png)
 
-2.  Click on **New project.**
+2. Click on **All resources** under **Management**, then click on **New Hub**.
 
-    ![](./media/image132.png)
+    ![](./media/image205.png)
 
-3.  Enter the unique project name(`cbsbaoai-proj`) and then click on Create a new hub link on the Hub drop down link as shown below
-    image.
-
-    ![](./media/image133.png)
-
-4.  Enter the below values and then click on **Next**
+3.  Enter the below values and then click on **Next**
 
     - Hub name: `cbcbaoaihub`
 
@@ -313,43 +308,53 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     - Connect Azure AI Search: Select your Azure AI Search
 
-    ![](./media/image134.png)
+    ![](./media/image206.png)
 
-5.  Review the details and then click on **Create a project** button. Wait until the project creation finishes.
+4. Click on **Create** button.
 
-    ![](./media/image135.png)
+    ![](./media/image207.png)
 
-    ![](./media/image136.png)
+5. Click on **All projects** from left navigation menu.
 
-6.  Click on **Chat** from the left navigation menu under **Project Playground**. In Setup section in the details pane, expand **Add your data** and then click on **Add a new data source**.
+    ![](./media/image208.png)
+
+6.  Click on **New project.**
+
+    ![](./media/image209.png)
+
+7.  Enter the unique project name(`cbsbaoai-proj`) and then click on **Create a project** button.
+
+    ![](./media/image210.png)
+
+8.  Click on **Chat** from the left navigation menu under **Project Playground**. In Setup section in the details pane, expand **Add your data** and then click on **Add a new data source**.
 
     ![](./media/image137.png)
 
-7.  Select **Azure AI Search** as **Data source** and then click **Next**.
+9.  Select **Azure AI Search** as **Data source** and then click **Next**.
 
     ![](./media/image138.png)
 
-8.  Select your **Azure AI Search** service from the drop-down menu, and then select **customer-index** that you created previusly, and then click **Next**.
+10.  Select your **Azure AI Search** service from the drop-down menu, and then select **customer-index** that you created previusly, and then click **Next**.
 
     ![](./media/image139.png)
 
-9.  In the **Vector Index**, keep the default value (customer-index), click **Next**.
+11.  In the **Vector Index**, keep the default value (customer-index), click **Next**.
 
     ![](./media/image140.png)
 
-10. Click on **Create Vector Index**.
+12. Click on **Create Vector Index**.
 
     ![](./media/image141.png)
 
     ![](./media/image142.png)
 
-11. Enter the below prompt in the **Type user query here** text box and press the send button.
+13. Enter the below prompt in the **Type user query here** text box and press the send button.
 
     `Details of Customer ID- 3`
 
     ![](./media/image143.png)
 
-12. Once response is received, enter the below prompt next and press send
+14. Once response is received, enter the below prompt next and press send
 
     `List high-value customers`
 
@@ -357,11 +362,11 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     ![](./media/image145.png)
 
-13. Now, you are ready to deploy your app. Click on **Deploy- > as a web app** from the top menu.
+15. Now, you are ready to deploy your app. Click on **Deploy- > as a web app** from the top menu.
 
     ![](./media/image146.png)
 
-14. Enter the below details and then click on **Deploy**. Deployment takes 5-10 min to complete.
+16. Enter the below details and then click on **Deploy**. Deployment takes 5-10 min to complete.
 
     - Select **Create a new web app** radio button
 
