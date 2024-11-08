@@ -389,17 +389,20 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     - Pricing plan: Standard (S1) /S2
 
-    ![](./media/image147.png)
+    
+   ![](./media/image147.png)
 
-    ![](./media/image148.png)
+   ![](./media/image148.png)
 
-    ![](./media/image149.png)
+   ![](./media/image149.png)
 
 17. Switch back to Azure portal page, click on **Resource group -> Resource group** name. Click on **Deployments** under **SEttings** from left navigation menu.
 
     ![](./media/image219.png)
 
 18. Deployment takes 5–10 minutes. You can continue with the next 12 steps in the following lab. The app will be accessible only after the deployment is successful.
+
+    ![](./media/image220.png)
 
 >**Summary:** We have successfully integrated the Azure OpenAI chatbot into Contoso Bank’s customer engagement platform. The chatbot provides real-time assistance to potential borrowers, enhancing digital engagement and improving the customer experience. This integration allows the bank to deliver personalized recommendations based on customer behavior and preferences, further supporting targeted marketing efforts.
 
