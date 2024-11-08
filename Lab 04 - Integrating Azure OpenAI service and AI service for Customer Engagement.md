@@ -167,7 +167,7 @@ In this task, we will create Azure OpenAI resource to deploy OpenAI models for e
     ![](./media/image114.png)
 
 
-### **Task 5 : Add a data source to Azure AI search service**
+### **Task 4 : Add a data source to Azure AI search service**
 
 In this task, we will add our Azure storage container as the data source for all our resources that will be used to enrich data.
 
@@ -196,7 +196,7 @@ In this task, we will add our Azure storage container as the data source for all
 
     ![](./media/image118.png)
 
-### **Task 6: Create skillsets in Azure AI search**
+### **Task 5: Create skillsets in Azure AI search**
 
 In this task, we will create a skillset  object in Azure AI Search that's attached to an indexer.It contains one or more skills that call built-in AI or external custom processing over documents retrieved from an external data source. Creating and mappink the skills will enhance the in saerch we perform on the index.
 
@@ -257,13 +257,13 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
 
 13.  Repeat the above 2 steps to also add the below fields and then click **Next: Create an indexer**
 
-    - Field name -  `customer_name` , Type - Edm.String , Skills -All
+     - Field name -  `customer_name` , Type - Edm.String , Skills -All
 
-    - Field name -  `CustomerSince` , Type - Edm.Int32 , Skills -All
+     - Field name -  `CustomerSince` , Type - Edm.Int32 , Skills -All
 
-    - Field name -  `campaign_result` , Type - Edm.String , Skills -All
+     - Field name -  `campaign_result` , Type - Edm.String , Skills -All
 
-    - Field name -  `age` , Type - Edm.Int32 , Skills -Al
+     - Field name -  `age` , Type - Edm.Int32 , Skills -Al
 
     
    ![](./media/image125.png)
@@ -282,7 +282,7 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
 
      ![](./media/image129.png)
 
-### **Task 7: Build and Deploy Chat app in Azure AI Studio.**
+### **Task 6: Build and Deploy Chat app in Azure AI Studio.**
 
 In this task, we will create, configure, and deploy the chatbot powered by Azure AI, integrated with our AML model.
 
