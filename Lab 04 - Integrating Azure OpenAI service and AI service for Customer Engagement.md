@@ -257,6 +257,7 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
 
 13.  Repeat the above 2 steps to also add the below fields and then click **Next: Create an indexer**
 
+<<<<<<< HEAD
      - Field name -  `customer_name` , Type - Edm.String , Skills -All
 
      - Field name -  `CustomerSince` , Type - Edm.Int32 , Skills -All
@@ -264,9 +265,18 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
      - Field name -  `campaign_result` , Type - Edm.String , Skills -All
 
      - Field name -  `age` , Type - Edm.Int32 , Skills -Al
+=======
+        - Field name -  `customer_name` , Type - Edm.String , Skills -All
+
+        - Field name -  `CustomerSince` , Type - Edm.Int32 , Skills -All
+
+        - Field name -  `campaign_result` , Type - Edm.String , Skills -All
+
+        - Field name -  `age` , Type - Edm.Int32 , Skills -Al
+>>>>>>> 41c3d8c6aa4500268ec73b5342a41cfbf99b3a14
 
     
-   ![](./media/image125.png)
+     ![](./media/image125.png)
 
 14.  Enter the indexer name : `customer-azureblob-indexer` and click **Submit** for the skills to be created.
 
