@@ -201,6 +201,7 @@ In this task, we will add our Azure storage container as the data source for all
 In this task, we will create a skillset  object in Azure AI Search that's attached to an indexer.It contains one or more skills that call built-in AI or external custom processing over documents retrieved from an external data source. Creating and mappink the skills will enhance the in saerch we perform on the index.
 
 1. On the **Identity** page of your Azure AI search service, turn on **System assigned** Managed Identity. Click **Save** on the top menu to generate the Object ID of the managed identity.
+
     ![](./media/image198.png)
 
 2. Click on **yes**
