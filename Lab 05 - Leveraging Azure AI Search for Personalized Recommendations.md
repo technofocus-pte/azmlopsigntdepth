@@ -7,9 +7,6 @@
 - Use Azure AI Bot Service for customer engagement using a chatbot
 
 
-
-# Leveraging Azure AI Search for Personalized Recommendations
-
 >**Introduction:** In this task, we will leverage Azure AI Search to power personalized recommendations for customers. Azure AI Search allows us to index and analyze customer data, enabling us to recommend relevant loan products based on individual customer preferences and behaviors. We will integrate this search functionality with Contoso Bank’s existing systems to ensure seamless data flow and accurate recommendations.
 
 
