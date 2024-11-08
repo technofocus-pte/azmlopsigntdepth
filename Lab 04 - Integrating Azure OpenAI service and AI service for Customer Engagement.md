@@ -201,13 +201,34 @@ In this task, we will add our Azure storage container as the data source for all
 In this task, we will create a skillset  object in Azure AI Search that's attached to an indexer.It contains one or more skills that call built-in AI or external custom processing over documents retrieved from an external data source. Creating and mappink the skills will enhance the in saerch we perform on the index.
 
 1. On the **Identity** page of your Azure AI search service, turn on **System assigned** Managed Identity. Click **Save** on the top menu to generate the Object ID of the managed identity.
+    ![](./media/image198.png)
 
+2. Click on **yes**
 
-2. Copy the **Object ID** of the managed identity created, and click on 88Azure Role Assignments** button to assign the required permissions to this ID.
+    ![](./media/image199.png)
+
+3. Copy the **Object ID** of the managed identity created, and click on **Azure Role Assignments** button to assign the required permissions to this ID.
+
+    ![](./media/image200.png)
+
 3. Click on **Add role assignments (Preview)** on the top menu.
-4. In the **Scope** drop down, select **Storage**.
-5. In the **Resource** drop down, select your storage account.
-6. Search and assign the **Storage Blob Data Reader** role to this Managed Identity on your azure storage.
+
+    ![](./media/image201.png)
+
+4. Select below values.
+
+    - In the **Scope** drop down, select **Storage**.
+    - In the **Resource** drop down, select your storage account.
+    - Search and assign the `Storage Blob Data Reader` role to this Managed Identity on your azure storage.
+
+    ![](./media/image202.png)
+
+5. Click on **Save** now.
+
+    ![](./media/image203.png)
+
+    ![](./media/image204.png)
+
 7. On the Overview page of your Azure Search service, click on **Import data** from the top menu.
 
     ![](./media/image119.png)
