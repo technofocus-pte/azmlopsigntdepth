@@ -15,8 +15,8 @@ experimentation.
 
     ![](./media/image221.png)
 
-The job display name is an optional and customizable name that you can
-provide for your job. To edit the job display name:
+    The job display name is an optional and customizable name that you can
+    provide for your job. To edit the job display name:
 
 2.  Select the **Edit** button to edit the job display name.
 
