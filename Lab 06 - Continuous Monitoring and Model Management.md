@@ -92,6 +92,6 @@ monitor the logs.
     select Scope, Metric Namespace and required metric for your app to
     monitor.
 
-> ![](./media/image232.png)
+![](./media/image232.png)
 
 4.  Explore with different metrics
