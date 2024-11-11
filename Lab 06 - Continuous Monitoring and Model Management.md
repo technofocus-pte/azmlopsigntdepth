@@ -34,6 +34,11 @@ experimentation.
 
     ![](./media/image224.png)
 
+2.  Click on **metrics** option to view the job logs. It gives you
+    both system and the user logs.
+
+    ![](./media/image233.png)
+
 ### **Task 3: Monitor the job status by email notification**
 
 1.  Switch back to Azure Machine learning workspace (Azure portal ->
