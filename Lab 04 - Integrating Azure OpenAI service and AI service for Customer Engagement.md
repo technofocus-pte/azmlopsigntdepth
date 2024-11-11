@@ -85,10 +85,6 @@ In this task, we will create an AI multi-service resource for NLP to enrich data
 
     ![](./media/image95.png)
 
-6.  Select **Keys and Endpoint** under the **Resource Management** in the left navigation menu. Make a note of the **Key 1** value as **AZURE_MULTISERVICE_ENDPOINT** in the notepad, as these will be used later in the lab to communicate with this service.
-
-    ![](./media/image96.png)
-
 ### **Task 3 : Create Azure OpenAI resource**
 
 In this task, we will create Azure OpenAI resource to deploy OpenAI models for embeddings and completions to use them in our Chat app
