@@ -386,12 +386,11 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
  - Pricing plan: Standard (S1) /S2
 
+    ![](./media/image147.png)
 
-![](./media/image147.png)
+    ![](./media/image148.png)
 
-![](./media/image148.png)
-
-![](./media/image149.png)
+    ![](./media/image149.png)
 
 17. Switch back to Azure portal page, click on **Resource group -> Resource group** name. Click on **Deployments** under **SEttings** from left navigation menu.
 
