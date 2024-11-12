@@ -63,7 +63,14 @@ In this exercise, we will set up the foundational components of the Azure Machin
     ![](./media/image3.png)
 
 
-5. We will also install Python dependencies (e.g. azureml-sdk). Run +++pip install azureml-sdk+++ to install the dependencies.
+5. We will also install Python dependencies (e.g. azureml-sdk). Run below commands to install the dependencies.
+
+
+    +++pip3 install --upgrade pip+++
+
+    +++pip install --upgrade azureml-core+++
+
+    +++pip install azureml-sdk+++ 
 
     ![](./media/image4.png)
 
@@ -181,13 +188,13 @@ In this exercise, we will set up the foundational components of the Azure Machin
     ![](./media/image32.png)
 
 
-21. In the IAM details pane, Click on **Role assignments** (next to **Check Access**).
+10. In the IAM details pane, Click on **Role assignments** (next to **Check Access**).
 
     ![](./media/image34.png)
 
-22. You should be able to see all the assigned roles to your tenant.
+11. You should be able to see all the assigned roles to your tenant.
 
-    ![](./media/image35.png)
+    ![](./media/image234.png)
 
 ### **Task 3 : Upload Contoso Bank loan documents into Azure Storage account**
 
