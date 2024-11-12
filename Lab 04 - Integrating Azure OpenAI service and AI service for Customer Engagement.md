@@ -342,23 +342,23 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
      ![](./media/image215.png)
 
-11.  In the **Vector Index**, keep the default value (customer-index), click **Next**.
+13.  In the **Vector Index**, keep the default value (customer-index), click **Next**.
 
      ![](./media/image216.png)
 
-12. Click on **Create Vector Index**.
+14. Click on **Create Vector Index**.
 
     ![](./media/image217.png)
 
     ![](./media/image218.png)
 
-13. Enter the below prompt in the **Type user query here** text box and press the send button.
+15. Enter the below prompt in the **Type user query here** text box and press the send button.
 
     `Details of Customer ID- 3`
 
     ![](./media/image143.png)
 
-14. Once response is received, enter the below prompt next and press send
+16. Once response is received, enter the below prompt next and press send
 
     `List high value customers`
 
@@ -366,25 +366,25 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     ![](./media/image145.png)
 
-15. Now, you are ready to deploy your app. Click on **Deploy- > as a web app** from the top menu.
+17. Now, you are ready to deploy your app. Click on **Deploy- > as a web app** from the top menu.
 
     ![](./media/image146.png)
 
-16. Enter the below details and then click on **Deploy**. Deployment takes 5-10 min to complete.
+18. Enter the below details and then click on **Deploy**. Deployment takes 5-10 min to complete.
 
     - Select **Create a new web app** radio button
 
     >Note : Deployment takes 5-10 minutes
 
- - Name: should be a unique name (eg `mlappchatappXXXX` - XXXX can be a unique number)
+    - Name: should be a unique name (eg `mlappchatappXXXX` - XXXX can be a unique number)
 
- - Subscription: Your Azure subscription
+    - Subscription: Your Azure subscription
 
- - Resource group - your resource existing resource group
+    - Resource group - your resource existing resource group
 
- - Location - West US / East US/East US 2 ( usually East US has high demand and deployment may fail). You can use the same location as the hub
+    - Location - West US / East US/East US 2 ( usually East US has high demand and deployment may fail). You can use the same location as the hub
 
- - Pricing plan: Standard (S1) /S2
+    - Pricing plan: Standard (S1) /S2
 
     ![](./media/image147.png)
 
@@ -392,11 +392,11 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     ![](./media/image149.png)
 
-17. Switch back to Azure portal page, click on **Resource group -> Resource group** name. Click on **Deployments** under **SEttings** from left navigation menu.
+19. Switch back to Azure portal page, click on **Resource group -> Resource group** name. Click on **Deployments** under **SEttings** from left navigation menu.
 
     ![](./media/image219.png)
 
-18. Deployment takes 5–10 minutes. You can continue with the next 12 steps in the following lab. The app will be accessible only after the deployment is successful.
+20. Deployment takes 5–10 minutes. You can continue with the next 12 steps in the following lab. The app will be accessible only after the deployment is successful.
 
     ![](./media/image220.png)
 
