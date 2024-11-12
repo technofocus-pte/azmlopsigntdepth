@@ -22,7 +22,7 @@ experimentation.
 
     ![](./media/image222.png)
 
-3.  Give ++**cbamljob**++ as the new name to the job and click on
+3.  Give +++**cbamljob**+++ as the new name to the job and click on
     **Save** button.
 
     ![](./media/image223.png)
@@ -41,8 +41,8 @@ experimentation.
 
 ### **Task 3: Monitor the job status by email notification**
 
-1.  Switch back to Azure Machine learning workspace (Azure portal ->
-    Resource group- > AML workspace name)
+1.  Switch back to **Azure Machine learning workspace** (Azure portal ->
+    Resource group- > AML workspace name)tab.
 
     ![](./media/image225.png)
 
@@ -51,7 +51,7 @@ experimentation.
 
     ![](./media/image226.png)
 
-3.  Provide the Diagnostic setting name as ++**alert++**
+3.  Provide the Diagnostic setting name as +++alert+++
 
 - Under the **Category details**, select
   the **AmlRunStatusChangedEvent**.
