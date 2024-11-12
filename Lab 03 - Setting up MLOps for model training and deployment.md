@@ -58,7 +58,7 @@ In this task,we will use python SDK to clean the data and train the model using 
 
 10.  Run cell to Describe the data after transposing
 
-![](./media/image68.png)
+    ![](./media/image68.png)
 
 11. Run the cell to replace missing value with 0.
 
@@ -83,7 +83,6 @@ In this task,we will use python SDK to clean the data and train the model using 
 16. Run cell to show distribution of data in InternetBanking column
 
     ![](./media/image182.png)
-    
 
 17. Run cell to show distribution of data in CreditCard column
 

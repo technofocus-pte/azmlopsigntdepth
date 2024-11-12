@@ -373,7 +373,8 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 16. Enter the below details and then click on **Deploy**. Deployment takes 5-10 min to complete.
 
     - Select **Create a new web app** radio button
->Note : Deployment takes 5-10 minutes
+    
+    >Note : Deployment takes 5-10 minutes
 
  - Name: should be a unique name (eg `mlappchatappXXXX` - XXXX can be a unique number)
 
