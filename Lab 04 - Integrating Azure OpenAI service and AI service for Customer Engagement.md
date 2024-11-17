@@ -413,7 +413,7 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     - Resource group - your resource existing resource group
 
-    - Location - West US / East US/East US 2 ( usually East US has high
+    - Location - West US / Central US / East US/East US 2 ( usually East US has high
   demand and deployment may fail). You can use the same location as the
   hub
 
