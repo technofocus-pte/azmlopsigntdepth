@@ -95,10 +95,14 @@ In this task, we explore the chat-app
 
 19. The app opens, enter the below prompts, and explore it.
 
-    `List high-value customers`
+    ``Show only high-value customers along with their name, age, and campaign result``
 
-    `give customer details whose mortgage is not 0`
+    ![](./media/image270.png)
 
-    ![](./media/image168.png)
+    ``Show only customers with Business account  along with their name, age, and Account Type.``
 
-    ![](./media/image169.png)
+    ![](./media/image271.png)
+
+    ``list customer name, age ,campaignresult of Medium Value Customer``
+
+    ![](./media/image272.png)

@@ -163,36 +163,7 @@ In this task, we will create Azure OpenAI resource to deploy OpenAI models for e
     ![](./media/image114.png)
 
 
-### **Task 4 : Add a data source to Azure AI search service**
-
-In this task, we will add our Azure storage container as the data source for all our resources that will be used to enrich data.
-
-1.  Switch back to **Azure portal -> Resource group- > Azure AI search service.**
-
-    ![](./media/image115.png)
-
-2.  Click on **Search management -> Data source** . Select **Add data source -> Add data source.**
-
-    ![](./media/image116.png)
-
-3.  Select the below values and then click on **Create.**
-
-    - Data source: Azure blob Storage
-
-    - Name: unique name (eg: `enrichdatasource`)
-
-    - Subscription: your Azure subscription
-
-    - Storage account- your Azure storage account
-
-    - Blob container -  `azureml-blobstore-XXXX` (your default blob container where raw data is uploaded.)
-    - Blob Folder - (Leave blank)
-
-    ![](./media/image117.png)
-
-    ![](./media/image118.png)
-
-### **Task 5: Create skillsets in Azure AI search**
+### **Task 4: Create skillsets in Azure AI search**
 
 In this task, we will create a skillset  object in Azure AI Search that's attached to an indexer.It contains one or more skills that call built-in AI or external custom processing over documents retrieved from an external data source. Creating and mappink the skills will enhance the in saerch we perform on the index.
 
@@ -208,11 +179,11 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
 
     ![](./media/image200.png)
 
-3. Click on **Add role assignments (Preview)** on the top menu.
+4. Click on **Add role assignments (Preview)** on the top menu.
 
     ![](./media/image201.png)
 
-4. Select below values.
+5. Select below values.
 
     - In the **Scope** drop down, select **Storage**.
     - In the **Resource** drop down, select your storage account.
@@ -220,65 +191,116 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
 
     ![](./media/image202.png)
 
-5. Click on **Save** now.
+6. Click on **Save** now.
 
     ![](./media/image203.png)
 
     ![](./media/image204.png)
 
-7. On the Overview page of your Azure Search service, click on **Import data** from the top menu.
+7. On the Overview page of your Azure Search service, click
+on **Import and vectorize data** from the top menu.
 
-    ![](./media/image119.png)
+    ![](./media/image239.png)
 
-8.  Keep **Existing data source** selected from the **Data Source** drop down, and select **enrichdatasourceXXXX** (your data source). Then click on **Next: Add cognitive skills (Optional)**.
+8. Select **Azure Blob Storage** tile.
 
-    ![](./media/image120.png)
+    ![](./media/image240.png)
 
-9.  Expand **Attach AI Services** and select the AI multi-service resource created in the previous task.
+9. Enter below values and then click **Next**.
 
-    ![](./media/image121.png)
+    **Subscription : Your Azure Subscription**
 
-10.  Expand **Add enrichments**, keep default skillset name, check **enable OCR** and select all **checked items requiring a filed name** except
-    **Extract personally identifiable information** then click on **Next: Customize target index.**
+    **Storage account : Your storage account**
 
-     ![](./media/image122.png)
+    **Blob container : azureml-blobstore-XXXXX**
 
-11.  Enter Index name as - `customer-index`, and click on **Add field** on top of the field table.
-
-     ![](./media/image123.png)
-
-12.  In the new field row that gets added at the bottm of the table, enter **Field name** as : `customer_id`, select type="Edm.String" and select all skills
-
-     ![](./media/image124.png)
-
-13.  Repeat the above 2 steps to also add the below fields and then click **Next: Create an indexer**
-
-      - Field name -  `customer_name` , Type - Edm.String , Skills -All
-
-      - Field name -  `CustomerSince` , Type - Edm.Int32 , Skills -All
-
-      - Field name -  `campaign_result` , Type - Edm.String , Skills -All
-
-      - Field name -  `age` , Type - Edm.Int32 , Skills -All
+    ![](./media/image241.png)
 
 
-     ![](./media/image125.png)
+10. Select below values and then click on **Next**.
 
-14.  Enter the indexer name : `customer-azureblob-indexer` and click **Submit** for the skills to be created.
+    Kind: **Azure OpenAI**
 
-     ![](./media/image126.png)
+    Subscription : **Your Azure subscription**
 
-     ![](./media/image127.png)
+    Azure OpenAI service : **select Azure OpenAI service**
 
-15.  Click on **Indexers** under **Search management**, you should see new indexer with succeeded documents count.
+    Model deployment : **text-embedding-ada-002**
 
-     ![](./media/image128.png)
+    Select check box : I acknowledge that connecting to an Azure OpenAI
+    service will incur additional costs to my account.
 
-16.  Click on **Indexes**. Note the new **customer-index** created. Wait for the Vector index size to update.
+    ![](./media/image242.png)
 
-     ![](./media/image129.png)
+11. without selecting anything, click on **Next**.
 
-### **Task 6: Build and Deploy Chat app in Azure AI Studio.**
+    ![](./media/image243.png)
+
+12. Click on **Next**.
+
+    ![](./media/image244.png)
+
+13. Enter **Objects name prefix** : +++cusomer-index+++ and
+then click **Create**.
+
+    ![](./media/image245.png)
+
+14. Click on **Close** .
+
+    ![](./media/image246.png)
+
+15. Select **Indexes** under **Search management**, wait for the
+**Document count** and **Vector index size** gets updated. It takes a
+few minutes to get update.
+
+    ![](./media/image247.png)
+
+16. Click on Index name .
+
+    ![](./media/image248.png)
+
+17. Click on **Fields tab -> Add field**. Enter below values and then
+click on **Save**.
+
+    Field name : +++**CustomerID**+++
+
+    Type : Edm.String
+
+    Configure attributes : **Select All**
+
+    ![](./media/image249.png)
+
+18. Repeat the above step to also add the below fields.
+
+- Field name – +++Name+++, Type - Edm.String , Skills -All
+
+- Field name - +++Age+++ , Type - Edm.Double , Skills -All
+
+- Field name - +++CustomerSince+++ , Type - Edm.Double , Skills -All
+
+- Field name - +++ HighestSpend+++ , Type - Edm.Double , Skills -All
+
+- Field name - +++MonthlyAverageSpend+++ , Type - Edm.Double , Skills
+  -All
+
+- Field name – +++ AccountType+++, Type - Edm.String , Skills -All
+
+- Field name – +++ Balance+++, Type - Edm.Double, Skills -All
+
+- Field name - +++LoanAmount+++ , Type - Edm.Double , Skills -All
+
+- Field name - +++ Income+++ , Type - Edm.Double , Skills -All
+
+- Field name - +++campaignresult+++ , Type - Edm.String , Skills -All
+
+![](./media/image250.png)
+
+19. Click on **Save** button to save the new fields and click on Search
+service name on top navigation menu.
+
+    ![](./media/image251.png)
+
+### **Task 5: Build and Deploy Chat app in Azure AI Studio.**
 
 In this task, we will create, configure, and deploy the chatbot powered by Azure AI, integrated with our AML model.
 
@@ -286,11 +308,15 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     ![](./media/image131.png)
 
-2. Click on **All resources** under **Management**, then click on **New Hub**.
+2. Click on **Create project**.
 
-    ![](./media/image205.png)
+    ![](./media/image252.png)
 
-3.  Enter the below values and then click on **Next**
+3. Enter the Project name: +++cbsbaoai-proj++++ and then click on Customize button.
+
+    ![](./media/image253.png)
+
+4.  Enter the below values and then click on **Next**
 
     - Hub name: `cbcbaoaihub`
 
@@ -304,101 +330,109 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     - Connect Azure AI Search: Select your Azure AI Search
 
-    ![](./media/image206.png)
+    ![](./media/image254.png)
 
-4. Click on **Create** button.
+5. Click on **Create** button.
 
-    ![](./media/image207.png)
+    ![](./media/image255.png)
 
-5. Click on **All projects** from left navigation menu.
+6. Close the experiment pop up window.
 
-    ![](./media/image208.png)
+    ![](./media/image256.png)
 
-6.  Click on **New project.**
+7. Click on **Playgrounds** from the left navigation menu, select **Try
+    the Chat playground**
 
-    ![](./media/image209.png)
+    ![](./media/image257.png)
 
-7.  Enter the unique project name(`cbsbaoai-proj`) and then click on **Create a project** button.
+8.  In Setup section in the details pane, expand **Add your
+    data** and then click on **Add a new data source**.
 
-    ![](./media/image210.png)
+    ![](./media/image258.png)
 
-8.  Click on **Chat** from the left navigation menu under **Project Playground**. In Setup section in the details pane, expand **Add your data** and then click on **Add a new data source**.
+10. Select **Azure AI Search** as **Data source** and then
+    click **Next**.
 
-    ![](./media/image211.png)
+    ![](./media/image259.png)
 
-9.  Select **Azure AI Search** as **Data source** and then click **Next**.
+11. Select your **Azure AI Search** service from the drop-down menu,
+    and then select **customer-index** that you created previously, and then
+    click **Next**.
 
-    ![](./media/image212.png)
+    ![](./media/image260.png)
 
-10. Click on **Select Azure AI Search service** drop down and select **Connect other Azure AI Search resource**
+12. In the **Configure search settings**, keep the default value
+    (customer-index), click **Next**.
 
-    ![](./media/image213.png)
+    ![](./media/image261.png)
 
-11. Click on **Add connection**
+13. In the **Vector Index**, keep the default value (customer-index),
+    click **Next**.
 
-    ![](./media/image214.png)
+    ![](./media/image262.png)
 
-12.  Select your **Azure AI Search** service from the drop-down menu, and then select **customer-index** that you created previusly, and then click **Next**.
+14. Click on **Create Vector Index**.
 
-     ![](./media/image215.png)
+    ![](./media/image263.png)
 
-13.  In the **Vector Index**, keep the default value (customer-index), click **Next**.
+15. Enter the below prompt in the **Type user query here** text box and
+    press the send button.
 
-     ![](./media/image216.png)
+    Show only high-value customers along with their name, age, and campaign
+    result
 
-14. Click on **Create Vector Index**.
-
-    ![](./media/image217.png)
-
-    ![](./media/image218.png)
-
-15. Enter the below prompt in the **Type user query here** text box and press the send button.
-
-    `Details of Customer ID- 3`
-
-    ![](./media/image143.png)
+    ![](./media/image264.png)
 
 16. Once response is received, enter the below prompt next and press send
 
-    `List high value customers`
+    +++list customer name, age ,campaignresult of Medium Value Customer+++
 
-    ![](./media/image144.png)
+    ![](./media/image265.png)
 
-    ![](./media/image145.png)
+    +++Show only customers with Business account along with their name, age,
+    and Account Type.+++
 
-17. Now, you are ready to deploy your app. Click on **Deploy- > as a web app** from the top menu.
+    ![](./media/image266.png)
 
-    ![](./media/image146.png)
+17. Now, you are ready to deploy your app. Click on **Deploy- > as a
+    web app** from the top menu.
 
-18. Enter the below details and then click on **Deploy**. Deployment takes 5-10 min to complete.
+    ![](./media/image267.png)
 
-    - Select **Create a new web app** radio button
+18. Enter the below details and then click on **Deploy**. Deployment
+    takes 5-10 min to complete.
+
+    - Select **Create a new web app** radio button
 
     >Note : Deployment takes 5-10 minutes
 
-    - Name: should be a unique name (eg `mlappchatappXXXX` - XXXX can be a unique number)
+- Name: should be a unique name (eg mlappchatappXXXX - XXXX can be a
+  unique number)
 
     - Subscription: Your Azure subscription
 
     - Resource group - your resource existing resource group
 
-    - Location - West US / East US/East US 2 ( usually East US has high demand and deployment may fail). You can use the same location as the hub
+    - Location - West US / East US/East US 2 ( usually East US has high
+  demand and deployment may fail). You can use the same location as the
+  hub
 
     - Pricing plan: Standard (S1) /S2
 
-    ![](./media/image147.png)
+    - Enable chat history in the web app : select check box.
 
-    ![](./media/image148.png)
+    ![](./media/image268.png)
 
-    ![](./media/image149.png)
+    ![](./media/image269.png)
 
-19. Switch back to Azure portal page, click on **Resource group -> Resource group** name. Click on **Deployments** under **SEttings** from left navigation menu.
+20. Switch back to Azure portal page, click on **Resource group -> Resource group** name. Click on **Deployments** under **SEttings** from left navigation menu.
 
     ![](./media/image219.png)
 
-20. Deployment takes 5–10 minutes. You can continue with the next 12 steps in the following lab. The app will be accessible only after the deployment is successful.
+21.  Deployment takes 5–10 minutes. You can continue with the next 12 steps in the following lab. The app will be accessible only after the deployment is successful.
 
-    ![](./media/image220.png)
+![](./media/image220.png)
+
 
 >**Summary:** We have successfully integrated the Azure OpenAI chatbot into Contoso Bank’s customer engagement platform. The chatbot provides real-time assistance to potential borrowers, enhancing digital engagement and improving the customer experience. This integration allows the bank to deliver personalized recommendations based on customer behavior and preferences, further supporting targeted marketing efforts.
 

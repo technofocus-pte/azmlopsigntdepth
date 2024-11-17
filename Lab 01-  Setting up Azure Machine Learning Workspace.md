@@ -218,7 +218,7 @@ When you create an Azure Machine Learning workspace, an Azure Storage Account is
     - Contoso Bank Home loan Guide.pdf
     - Contoso Personal Loan FAQs.pdf
     - Contoso Personal Loan guide.pdf
-    - enriched_data.csv
+    - CustomerInfo_Generated.CSV
 
     ![](./media/image39.png)
 
@@ -227,5 +227,21 @@ When you create an Azure Machine Learning workspace, an Azure Storage Account is
     ![](./media/image40.png)
 
     ![](./media/image41.png)
+
+6. Click on **Upload** again.
+
+    ![](./media/image235.png)
+7. Click on **Browse for files** , navigate to **C:\Labfiles** and
+select **CustomerInfo_Generated**.**CSV** and then click on **Open**.
+
+    ![](./media/image236.png)
+
+8. Click on **Upload**.
+
+    ![](./media/image237.png)
+
+9. You should have all the below files uploaded in the blob storage.
+
+    ![](./media/image238.png)
 
 >#### **Summary:** In this exercise, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models with required permissions to perform the tasks. These foundational steps ensure that we have a secure, scalable environment in place to support Contoso Bank's data science and marketing initiatives.

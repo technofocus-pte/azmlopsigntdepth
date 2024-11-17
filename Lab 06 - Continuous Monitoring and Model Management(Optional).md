@@ -1,4 +1,4 @@
-# **Lab 06_Continuous Monitoring and Model Management.**
+# **Lab 06_Continuous Monitoring and Model Management(Optional).**
 
 # **Exercise 1 : Monitoring and analyzing jobs in studio**
 
