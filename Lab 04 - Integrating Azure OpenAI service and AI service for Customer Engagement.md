@@ -272,28 +272,28 @@ click on **Save**.
 
 18. Repeat the above step to also add the below fields.
 
-- Field name – +++Name+++, Type - Edm.String , Skills -All
+- Field name – `Name`, Type - Edm.String , Skills -All
 
-- Field name - +++Age+++ , Type - Edm.Double , Skills -All
+- Field name - `Age` , Type - Edm.Double , Skills -All
 
-- Field name - +++CustomerSince+++ , Type - Edm.Double , Skills -All
+- Field name - `CustomerSince` , Type - Edm.Double , Skills -All
 
-- Field name - +++ HighestSpend+++ , Type - Edm.Double , Skills -All
+- Field name - `HighestSpend` , Type - Edm.Double , Skills -All
 
-- Field name - +++MonthlyAverageSpend+++ , Type - Edm.Double , Skills
+- Field name - `MonthlyAverageSpend` , Type - Edm.Double , Skills
   -All
 
-- Field name – +++ AccountType+++, Type - Edm.String , Skills -All
+- Field name – `AccountType`, Type - Edm.String , Skills -All
 
-- Field name – +++ Balance+++, Type - Edm.Double, Skills -All
+- Field name – `Balance`, Type - Edm.Double, Skills -All
 
-- Field name - +++LoanAmount+++ , Type - Edm.Double , Skills -All
+- Field name - `LoanAmount` , Type - Edm.Double , Skills -All
 
-- Field name - +++ Income+++ , Type - Edm.Double , Skills -All
+- Field name - `Income` , Type - Edm.Double , Skills -All
 
-- Field name - +++campaignresult+++ , Type - Edm.String , Skills -All
+- Field name - `campaignresult` , Type - Edm.String , Skills -All
 
-![](./media/image250.png)
+    ![](./media/image250.png)
 
 19. Click on **Save** button to save the new fields and click on Search
 service name on top navigation menu.
@@ -312,7 +312,7 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     ![](./media/image252.png)
 
-3. Enter the Project name: +++cbsbaoai-proj++++ and then click on Customize button.
+3. Enter the Project name: `cbsbaoai-proj` and then click on Customize button.
 
     ![](./media/image253.png)
 
@@ -350,32 +350,32 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     ![](./media/image258.png)
 
-10. Select **Azure AI Search** as **Data source** and then
+9. Select **Azure AI Search** as **Data source** and then
     click **Next**.
 
     ![](./media/image259.png)
 
-11. Select your **Azure AI Search** service from the drop-down menu,
+10. Select your **Azure AI Search** service from the drop-down menu,
     and then select **customer-index** that you created previously, and then
     click **Next**.
 
     ![](./media/image260.png)
 
-12. In the **Configure search settings**, keep the default value
+11. In the **Configure search settings**, keep the default value
     (customer-index), click **Next**.
 
     ![](./media/image261.png)
 
-13. In the **Vector Index**, keep the default value (customer-index),
+12. In the **Vector Index**, keep the default value (customer-index),
     click **Next**.
 
     ![](./media/image262.png)
 
-14. Click on **Create Vector Index**.
+13. Click on **Create Vector Index**.
 
     ![](./media/image263.png)
 
-15. Enter the below prompt in the **Type user query here** text box and
+14. Enter the below prompt in the **Type user query here** text box and
     press the send button.
 
     Show only high-value customers along with their name, age, and campaign
@@ -383,7 +383,7 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     ![](./media/image264.png)
 
-16. Once response is received, enter the below prompt next and press send
+15. Once response is received, enter the below prompt next and press send
 
     +++list customer name, age ,campaignresult of Medium Value Customer+++
 
@@ -394,20 +394,20 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     ![](./media/image266.png)
 
-17. Now, you are ready to deploy your app. Click on **Deploy- > as a
+16. Now, you are ready to deploy your app. Click on **Deploy- > as a
     web app** from the top menu.
 
     ![](./media/image267.png)
 
-18. Enter the below details and then click on **Deploy**. Deployment
+17. Enter the below details and then click on **Deploy**. Deployment
     takes 5-10 min to complete.
 
     - Select **Create a new web app** radio button
 
     >Note : Deployment takes 5-10 minutes
 
-- Name: should be a unique name (eg mlappchatappXXXX - XXXX can be a
-  unique number)
+    - Name: should be a unique name (eg mlappchatappXXXX - XXXX can be a
+    unique number)
 
     - Subscription: Your Azure subscription
 
@@ -425,13 +425,13 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     ![](./media/image269.png)
 
-20. Switch back to Azure portal page, click on **Resource group -> Resource group** name. Click on **Deployments** under **SEttings** from left navigation menu.
+18. Switch back to Azure portal page, click on **Resource group -> Resource group** name. Click on **Deployments** under **SEttings** from left navigation menu.
 
     ![](./media/image219.png)
 
-21.  Deployment takes 5–10 minutes. You can continue with the next 12 steps in the following lab. The app will be accessible only after the deployment is successful.
+19.  Deployment takes 5–10 minutes. You can continue with the next 12 steps in the following lab. The app will be accessible only after the deployment is successful.
 
-![](./media/image220.png)
+    ![](./media/image220.png)
 
 
 >**Summary:** We have successfully integrated the Azure OpenAI chatbot into Contoso Bank’s customer engagement platform. The chatbot provides real-time assistance to potential borrowers, enhancing digital engagement and improving the customer experience. This integration allows the bank to deliver personalized recommendations based on customer behavior and preferences, further supporting targeted marketing efforts.
