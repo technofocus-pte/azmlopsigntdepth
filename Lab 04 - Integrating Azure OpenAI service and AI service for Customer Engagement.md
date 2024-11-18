@@ -272,26 +272,26 @@ click on **Save**.
 
 18. Repeat the above step to also add the below fields.
 
-- Field name – `Name`, Type - Edm.String , Skills -All
+- Field name –`Name`, Type - Edm.String , Skills -All
 
-- Field name - `Age` , Type - Edm.Double , Skills -All
+- Field name -`Age`, Type - Edm.Double , Skills -All
 
-- Field name - `CustomerSince` , Type - Edm.Double , Skills -All
+- Field name -`CustomerSince`, Type - Edm.Double , Skills -All
 
-- Field name - `HighestSpend` , Type - Edm.Double , Skills -All
+- Field name -`HighestSpend`, Type - Edm.Double , Skills -All
 
-- Field name - `MonthlyAverageSpend` , Type - Edm.Double , Skills
+- Field name -`MonthlyAverageSpend`, Type - Edm.Double , Skills
   -All
 
-- Field name – `AccountType`, Type - Edm.String , Skills -All
+- Field name – `AccountType`, Type - Edm.String , Skills -All
 
 - Field name – `Balance`, Type - Edm.Double, Skills -All
 
-- Field name - `LoanAmount` , Type - Edm.Double , Skills -All
+- Field name -`LoanAmount`, Type - Edm.Double , Skills -All
 
-- Field name - `Income` , Type - Edm.Double , Skills -All
+- Field name -`Income`, Type - Edm.Double , Skills -All
 
-- Field name - `campaignresult` , Type - Edm.String , Skills -All
+- Field name -`campaignresult`, Type - Edm.String , Skills -All
 
     ![](./media/image250.png)
 
@@ -378,8 +378,8 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 14. Enter the below prompt in the **Type user query here** text box and
     press the send button.
 
-    Show only high-value customers along with their name, age, and campaign
-    result
+    +++Show only high-value customers along with their name, age, and campaign
+    result+++
 
     ![](./media/image264.png)
 
