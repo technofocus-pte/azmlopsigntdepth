@@ -62,7 +62,7 @@ In this task, we will create an AI multi-service resource for NLP to enrich data
 
     - Subscription : Your Azure subscription
 
-    - Resource group : Your existing resource group
+    - Resource group : Your existing resource group which was created in Lab 1
 
     - Region : **Same region as your Search service region**
 

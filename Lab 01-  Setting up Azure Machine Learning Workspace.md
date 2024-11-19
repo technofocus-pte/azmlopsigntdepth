@@ -218,7 +218,7 @@ When you create an Azure Machine Learning workspace, an Azure Storage Account is
     - Contoso Bank Home loan Guide.pdf
     - Contoso Personal Loan FAQs.pdf
     - Contoso Personal Loan guide.pdf
-    - CustomerInfo_Generated.CSV
+   
 
     ![](./media/image39.png)
 
