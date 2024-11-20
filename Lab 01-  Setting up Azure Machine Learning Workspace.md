@@ -18,7 +18,7 @@ In this lab, you will work as an AI app developer in Contoso Bank's AI engineeri
 **MLOps**: For covering model training, deployment, and automated model
     management.
 
-**Azure AI Studio**: Used to create, configure, and deploy the
+**Azure AI Foundry**: Used to create, configure, and deploy the
     chatbot powered by Azure AI and integrated with the AML model.
 
 **Azure AI Search**: For enriching the chatbot with search and query
