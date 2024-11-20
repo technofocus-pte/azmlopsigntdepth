@@ -29,7 +29,7 @@ In this task, we create Azure AI Search service for enriching the chatbot with s
 
     - Service name - `cbsb-aisearchXXXX` ( replace XXXX with unique number)
 
-    - Location : **west us**/north Europe /location near to you
+    - Location : **West us**/**East US** /**East US2** /location near to you
 
     ![](./media/image87.png)
 
