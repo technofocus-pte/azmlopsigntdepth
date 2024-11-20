@@ -129,14 +129,16 @@ In this task, we will create Azure OpenAI resource to deploy OpenAI models for e
     ![](./media/image104.png)
 
 7.  Click on **Overview** tab on the left navigation panel, and then click on **Go to Azure OpenAI Studio**. Azure OpenAI Studio opens in new tab.
-  
-8.  Sign in if required. Close the pop-ups that appear.
+    
+    ![](./media/image273.png)
+
+8.  **Azure AI Foundry|Azure OpenAI Service** page opens.Sign in if required and close the pop-ups that appear.
 
     ![](./media/image106.png)
 
-9.  Click on **Deployment** from left navigation menu. In the **Deploy model** drop down menu select **Deploy base model.**
+9.  Click on **Deployment**  under **Shared resources** from left navigation menu. In the **Deploy model** drop down menu select **Deploy base model.**
 
-    ![](./media/image107.png)
+    ![](./media/image274.png)
 
 10. Search for `gpt-35-turbo-16k` and select it. Click on **Confirm**. GPT-3.5 models can understand and generate natural language or code. GPT-3.5 Turbo is the most capable and cost effective model in the GPT-3.5 family, which has been optimized for chat and works well for traditional completions tasks as well.
 
@@ -160,7 +162,7 @@ In this task, we will create Azure OpenAI resource to deploy OpenAI models for e
 
     ![](./media/image113.png)
 
-    ![](./media/image114.png)
+    ![](./media/image277.png)
 
 
 ### **Task 4: Create skillsets in Azure AI search**
@@ -179,7 +181,7 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
 
     ![](./media/image200.png)
 
-4. Click on **Add role assignments (Preview)** on the top menu.
+4. Click on **Add role assignments (Preview)** on the top menu.(Note : ignore the error **Unable to list classic administrators because a server error occurred. Please try again later.** . proceed and assign role)
 
     ![](./media/image201.png)
 
@@ -197,7 +199,7 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
 
     ![](./media/image204.png)
 
-7. On the Overview page of your Azure Search service, click
+7. On the **Overview** page of your Azure Search service, click
 on **Import and vectorize data** from the top menu.
 
     ![](./media/image239.png)
@@ -300,17 +302,17 @@ service name on top navigation menu.
 
     ![](./media/image251.png)
 
-### **Task 5: Build and Deploy Chat app in Azure AI Studio.**
+### **Task 5: Build and Deploy Chat app in Azure AI Foundry.**
 
 In this task, we will create, configure, and deploy the chatbot powered by Azure AI, integrated with our AML model.
 
 1.  Open a new tab, navigate to `https://ai.azure.com` and sign in with your assigned Azure account.
 
-    ![](./media/image131.png)
+    ![](./media/image275.png)
 
-2. Click on **Create project**.
+2. In **Azure AI Foundry** page ,click on **Create project**.
 
-    ![](./media/image252.png)
+    ![](./media/image276.png)
 
 3. Enter the Project name: `cbsbaoai-proj` and then click on Customize button.
 
@@ -343,12 +345,12 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 7. Click on **Playgrounds** from the left navigation menu, select **Try
     the Chat playground**
 
-    ![](./media/image257.png)
+    ![](./media/image278.png)
 
 8.  In Setup section in the details pane, expand **Add your
     data** and then click on **Add a new data source**.
 
-    ![](./media/image258.png)
+    ![](./media/image279.png)
 
 9. Select **Azure AI Search** as **Data source** and then
     click **Next**.
@@ -406,7 +408,7 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     >Note : Deployment takes 5-10 minutes
 
-    - Name: should be a unique name (eg mlappchatappXXXX - XXXX can be a
+    - Name: should be a unique name (eg `mlappchatappXXXX` - XXXX can be a
     unique number)
 
     - Subscription: Your Azure subscription
@@ -423,7 +425,7 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
     ![](./media/image268.png)
 
-    ![](./media/image269.png)
+    ![](./media/image280.png)
 
 18. Switch back to Azure portal page, click on **Resource group -> Resource group** name. Click on **Deployments** under **SEttings** from left navigation menu.
 
@@ -431,7 +433,7 @@ In this task, we will create, configure, and deploy the chatbot powered by Azure
 
 19.  Deployment takes 5–10 minutes. You can continue with the next 12 steps in the following lab. The app will be accessible only after the deployment is successful.
 
-    ![](./media/image220.png)
+![](./media/image220.png)
 
 
 >**Summary:** We have successfully integrated the Azure OpenAI chatbot into Contoso Bank’s customer engagement platform. The chatbot provides real-time assistance to potential borrowers, enhancing digital engagement and improving the customer experience. This integration allows the bank to deliver personalized recommendations based on customer behavior and preferences, further supporting targeted marketing efforts.
