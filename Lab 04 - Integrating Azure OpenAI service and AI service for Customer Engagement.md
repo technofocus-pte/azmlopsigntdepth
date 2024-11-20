@@ -242,7 +242,7 @@ on **Import and vectorize data** from the top menu.
 
     ![](./media/image244.png)
 
-13. Enter **Objects name prefix** : +++cusomer-index+++ and
+13. Enter **Objects name prefix** : +++customer-index+++ and
 then click **Create**.
 
     ![](./media/image245.png)
